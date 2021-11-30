@@ -1,0 +1,912 @@
+@charset "utf-8";
+@font-face {
+	font-family: "utm-androgyne";
+	src: url(/en/area/cherry-blossom/fonts/utm-androgyne.ttf);
+}
+@font-face {
+	font-family: "open-sans";
+	src: url(/en/area/cherry-blossom/fonts/OpenSans-Regular.ttf);
+}
+.onlyMb {
+	display: none;
+}
+/* ===== Breadcrum ======== */
+@media(max-width:769px) {
+	.container {
+		margin: 0;
+		max-width: inherit;
+	}	
+	
+}
+/* ===== End Breadcrum ======== */
+
+
+/* ===== Banner Top ======== */
+.logoPage img {
+	max-width: 100%;
+}
+.banner-rep {
+	position: relative;
+	overflow: hidden;
+}
+.banner-template .banner-relative {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+}
+.sologan-cherry {
+	position: absolute;
+	top: 45%;
+	transform: translate(-50%, -50%);
+	left: 45%;
+}
+.sologan-cherry h1 {
+	font-family: "utm-androgyne";
+	font-size: 3.229vw;
+    color: #ff4285;
+	line-height: 1.5;
+    text-shadow: 3px 3px 8px #fff, -3px 3px 8px #fff, 3px 3px 8px #fff, 3px -3px 8px #fff, 1px 1px #fff, -1px -1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff;
+}
+.sologan-cherry h2 {
+	font-family: "open-sans";
+    font-size: 2.135vw;
+    color: #0057cc;
+    text-shadow: 3px 3px 8px #fff, -3px 3px 8px #fff, 3px 3px 8px #fff, 3px -3px 8px #fff, 1px 1px #fff, -1px -1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff;
+}
+.cloud {
+	width: 100%;
+}
+.cloud .bg-cloud {
+	position: relative;
+	max-width: 100%;
+	width: 100%;
+}
+.fixed {
+	position: fixed;
+	top: 0;
+	z-index: 3;
+}
+.tab-cherry{
+	margin-top: 30px;
+	display: flex;
+    justify-content: space-evenly;
+}
+.tabs-popular {
+	display: flex;
+	align-items: center;
+}
+.tabs-popular p {
+	color: #2b2b2b;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 0 10px;
+}
+.tabs-popular .fas {
+	color: #2b2b2b;
+}
+.tabs-popular .icon-arrow {
+	float: right;
+	margin-right: 10px;
+	margin-top: 7px;
+}
+.location-cherry {
+	position: relative;
+	background-image: url(/assets/img/bg-pink.png);
+	background-size: 100% 100%;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}
+.cont-location-cherry {
+	background: url(/assets/img/bg-pink.png);
+	position: relative;
+	padding: 0;
+}
+.bg-cherry-bottom {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+}
+.intro-cherry {
+	width: 100%;
+	display: inline-block;
+	margin-top: 50px;
+}
+.intro-cherry {
+	text-align: center;
+}
+.intro-cherry p {
+	font-size: 16px;
+	color: #2b2b2b;
+	line-height: 23px;
+	margin-bottom: 50px;
+}
+.intro-cherry h2 {
+	font-size: 32px;
+	color: #333;
+	font-weight: 700;
+	margin-bottom: 50px;
+}
+@media(max-width:1170px) {
+	.sologan-cherry img {
+		max-width: 65%;
+	}
+}
+@media(max-width:1110px) {
+	.tabs-popular {
+		width: auto;
+	}
+	.tabs-popular p {
+		margin-right: 0;
+	}
+	.sologan-cherry {
+    width: 70%;
+	}
+	.sologan-cherry h1 {
+    font-size: 4.2vw;
+	}
+	.sologan-cherry h2 {
+    font-size: 2.5vw;
+	}
+}
+@media screen and (max-width: 992px) {
+	.searchbox__title--mb {
+		margin-bottom: 0 !important;
+	}
+	.searchbox__txt {
+		margin-top: 0 !important;
+	}
+	.searchbox__inner {
+		padding: 20px !important;
+	}
+}
+@media(max-width:769px) {
+	.intro-cherry p {
+		text-align: justify;
+	}
+}
+@media (max-width:700px) {
+	.banner-template .banner-relative {
+		width: 100%;
+    	max-width: 100%;
+    	left: 0;
+	}
+	.tab-cherry{
+		margin-top: 10px;
+	}
+	.sologan-cherry {
+    position: absolute;
+    top: 28%;
+    left: 15px;
+    width: 85%;
+		transform: none;
+	}
+	.sologan-cherry h1 {
+    font-size: 5.5vw;
+	}
+	.sologan-cherry h2 {
+		font-size: 4vw;
+	}
+	.tab-cherry {
+		flex-direction: column;
+	}
+	.tabs-popular img {
+		width: 33px;
+	}
+	.tabs-popular {
+		width: 100%;
+		border-bottom: 1px solid #ccc;
+		padding: 10px 0;
+	}
+	.tabs-popular .fas {
+		position: absolute;
+		right: 15px;
+	}
+	.tabs-popular p {
+		margin-right: 10px;
+		font-size: 16px;
+	}
+	.tabs-popular {
+		min-height: 44px;
+	}
+	#mapPage {
+		padding-bottom: 0;
+	}
+	
+}
+@media (max-width:600px) {
+	.sologan-cherry h1 {
+    font-size: 7.5vw;
+    line-height: 9vw;
+    padding-bottom: 10px;
+	}
+	.sologan-cherry h2 {
+		font-size: 5vw;
+	}
+	.sologan-cherry {
+    top: 20%;
+	}
+	.tabs-popular p {
+		margin-top: 0;
+	}
+	.sologan-cherry img {
+		max-width: 98%;
+	}	
+}
+@media(max-width:500px) {
+	.intro-cherry {
+		margin-top: 30px;
+	}
+}
+@media(max-width:480px) {
+	.intro-cherry h2 {
+		font-size: 23px;
+	}
+	.tabs-popular p {
+		margin-top: 0;
+	}	
+}
+/* ===== End Banner Top ======== */
+
+
+/* ===== Map & List ======== */
+.bg-white {
+	background-color: #fff !important;
+}
+.bg-yellow-bold {
+	background-color: #ffeb99 !important;
+}
+.bg-yellow-semibold {
+	background-color: #fff6c4 !important;
+}
+.bg-yellow-normal {
+	background-color: #feffed !important;
+}
+.bg-pink-bold {
+	background-color: #ffced0 !important;
+}
+.bg-pink-semibold {
+	background-color: #ffe4e5 !important;
+}
+.bg-pink-normal {
+	background-color: #fffafa !important;
+}
+.nodatacell {
+	border: none !important;
+	background: none !important;
+}
+#maplistNavi {
+	overflow: hidden;
+	margin-bottom: 50px;
+	overflow: visible;
+}
+#maplistNavi ul {
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	display: table;
+}
+#maplistNavi li {
+	color: #565656;
+    background-color: #fff;
+    float: left;
+    font-size: 18px;
+    padding-left: 39px;
+    padding-right: 39px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+    font-weight: 700;
+}
+#maplistNavi li.active {
+	color: #fff;
+	background: #4174dc;
+}
+#listPage {
+	display: none;
+}
+#maplistNavi li#tabmap {
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	border-bottom: solid 1px #ddc8bb;
+	border-top: solid 1px #ddc8bb;
+	border-left: solid 1px #ddc8bb;
+}
+#maplistNavi li#tablist {
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom: solid 1px #ddc8bb;
+	border-top: solid 1px #ddc8bb;
+	border-right: solid 1px #ddc8bb;
+}
+#mapPage {
+	position: relative;
+	padding-bottom: 50px;
+	margin-bottom: 50px;
+	z-index: 2;
+}
+#mapPage img {
+	margin: 0 auto;
+}
+#mapPage a:hover{
+	text-decoration: underline !important;
+}
+#mapPage .abs-position{
+	position: absolute;	
+	font-size: 16px;
+}
+#mapPage .spot-hokkaido{
+	top: 13%;
+	left: 35%;
+}
+#mapPage .spot-akita{
+	top: 25%;
+	left: 42%;
+}
+#mapPage .spot-niigata{
+	top: 38%;
+	left: 33%;
+}
+#mapPage .spot-nagano{
+	top: 56%;
+	left: 66%;
+}
+#mapPage .spot-kanazawa{
+	top: 38%;
+	left: 19%;
+}
+#mapPage .spot-kyoto{
+	top: 49%;
+	left: 8%;
+}
+#mapPage .spot-hiroshima{
+	top: 60%;
+	left: 8%;
+}
+#mapPage .spot-fukuoka{
+	top: 76%;
+	left: 13%;
+}
+#mapPage .spot-osaka{
+	top: 77%;
+	left: 35%;
+}
+#mapPage .spot-aichi{
+	top: 85%;
+	left: 56%;
+}
+#mapPage .spot-yamanashi{
+	top: 78%;
+	left: 80%;
+}
+#mapPage .spot-tokyo{
+	top: 69%;
+	left: 66%;
+}
+#mapPage .spot-fukushima{
+	top: 47%;
+	left: 84%;
+}
+#mapPage .spot-miyagi{
+	top: 41%;
+	left: 66%;
+}
+#mapPage .spot-iwate{
+	top: 33%;
+	left: 81%;
+}
+#mapPage .spot-aomori{
+	top: 25%;
+	left: 67%;
+}
+#mapPage .spot-name{
+	font-size: 18px;
+	color: #134da5;	
+	font-weight: bold;
+	text-align: center;	
+}
+.sakuraplace-tbl {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 50px;
+	position: relative;
+	z-index: 4;
+}
+.sakuraplace-tbl td {
+	border: #e4b38d 1px solid;
+	text-align: center;
+	font-size: 16px;
+	vertical-align: middle;
+	padding: 10px;
+	color: #434343;
+}
+.sakuraplace-tbl th {
+	background-color: #edceb5;
+	border: #e4b38d 1px solid;
+	text-align: center;
+	font-size: 16px;
+	vertical-align: middle;
+	padding: 10px;
+	font-weight: bold;
+	color: #333;
+}
+.tblistplace {
+	font-weight: bold;
+	padding: 0 40px !important;
+}
+.tblistplace a {
+	color: #333;
+}
+.sakuraplace-tbl .area-bg th {
+	background: #efdec9;
+}
+.tour-map{
+	display:block;
+	max-width:1052px;
+	width:100%;
+}
+@media (max-width: 1199px){
+	#mapPage .abs-position {
+    font-size: 15px;
+	}
+	#mapPage .spot-name {
+    font-size: 15px;
+	}
+	#mapPage .spot-hokkaido{
+		top: 12%;
+		left: 33%;
+	}
+	#mapPage .spot-akita{
+		top: 24%;
+		left: 41%;
+	}
+	#mapPage .spot-niigata{
+		top: 37%;
+		left: 31%;
+	}
+	#mapPage .spot-nagano{
+		top: 55%;
+		left: 68%;
+	}
+	#mapPage .spot-kanazawa{
+		top: 37%;
+		left: 15%;
+	}
+	#mapPage .spot-kyoto{
+		top: 48%;
+		left: 4%;
+	}
+	#mapPage .spot-hiroshima{
+		top: 59%;
+		left: 3%;
+	}
+	#mapPage .spot-fukuoka{
+		top: 75%;
+		left: 8%;
+	}
+	#mapPage .spot-osaka{
+		top: 76%;
+		left: 33%;
+	}
+	#mapPage .spot-aichi{
+		top: 84%;
+		left: 57%;
+	}
+	#mapPage .spot-yamanashi{
+		top: 77%;
+		left: 84%;
+	}
+	#mapPage .spot-tokyo{
+		top: 68%;
+		left: 68%;
+	}
+	#mapPage .spot-fukushima{
+		top: 47%;
+		left: 87%;
+	}
+	#mapPage .spot-miyagi{
+		top: 41%;
+		left: 68%;
+	}
+	#mapPage .spot-iwate{
+		top: 33%;
+		left: 84%;
+	}
+	#mapPage .spot-aomori{
+		top: 25%;
+		left: 68%;
+	}
+}
+@media (max-width: 900px){
+	#mapPage .abs-position {
+    font-size: 13px;
+		line-height: 17px;
+		text-align: center;
+	}
+	#mapPage .spot-name {
+    font-size: 14px;
+	}
+}
+@media (max-width: 800px){	
+	#mapPage .spot-kyoto{
+		top: 47%;
+		left: 3%;
+	}
+	#mapPage .spot-hiroshima{
+		top: 58%;
+		left: 3%;
+	}
+	#mapPage .spot-fukuoka {
+    top: 74%;
+	}
+	#mapPage .spot-osaka{
+		top: 75%;
+	}
+	#mapPage .spot-aichi{
+		top: 83%;
+		left: 56%;
+	}
+	#mapPage .spot-yamanashi{
+		top: 76%;
+		left: 83%;
+	}
+	#mapPage .spot-tokyo{
+		top: 67%;
+	}
+	#mapPage .spot-fukushima{
+		top: 46%;
+	}
+	#mapPage .spot-miyagi{
+		top: 40%;
+	}
+	#mapPage .spot-iwate{
+		top: 32%;
+	}
+	#mapPage {
+     margin-bottom: 0px; 
+	}
+}
+@media (max-width: 767px) {
+	#maplistNavi {
+		display: none;
+	}
+	#mapPage {
+		display: none !important;
+	}
+	#listPage {
+		display: block !important;
+		position: relative;
+		z-index: 3;
+	}
+}
+@media (max-width:700px) {
+	#mapPage {
+		padding-bottom: 0;
+	}
+}
+@media(max-width:480px) {
+	.tblistplace {
+		padding-left: 10px !important;
+	}
+	.sakuraplace-tbl th {
+		font-size: 14px;
+	}
+	.sakuraplace-tbl td {
+		font-size: 13px;
+	}
+}
+@media(max-width:425px) {
+	.sakuraplace-tbl th {
+		font-size: 12px;
+		padding: 5px;
+	}
+	.sakuraplace-tbl td {
+		padding: 5px;
+		font-size: 12px;
+	}
+}
+@media(max-width:375px) {
+
+	.sakuraplace-tbl th {
+		font-size: 11px;
+	}
+	.sakuraplace-tbl td {
+		font-size: 11px;
+	}
+}
+/* ===== End Map & List ======== */
+
+
+/* ===== PPL Spots ======== */
+#spotList {
+    margin-left: 50px;
+}
+.nav-tabs {
+	border-bottom: none;
+}
+.nav-tabs .nav-link {
+	border: none;
+	border-right: 1px solid #a9a9a9;
+	border-top-left-radius: 0; 
+	border-top-right-radius: 0;
+	font-weight: bold;
+	font-size: 17px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	color: #000;
+	padding: 0;
+}
+.nav-link .fas {
+	color: #a9a9a9;
+	margin-right: 5px;
+}
+.nav-link.active {
+	color: #ec4064 !important;
+	border-color: #a9a9a9 !important;
+	text-decoration: underline;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+	color: #ec4064;
+	border-color: #a9a9a9;
+}
+.nav-item {
+	width: calc(100%/6);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+.nav-item span:first-child {
+    width: 85%;
+}
+.nav-item span:last-child {
+    width: 15%;
+}
+.intro-popular {
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 50px;
+}
+.intro-popular h2 {
+	font-size: 32px;
+	color: #333;
+	font-weight: 700;
+}
+.intro-popular p {
+	font-size: 16px;
+	color: #2b2b2b;
+	font-weight: 700;
+	line-height: 23px;
+	margin-top: 30px;
+}
+.btn-detail a {
+    color: #fff;
+    background: #e34f83;
+    border-radius: 30px;
+    padding: 15px 95px;
+    margin: 10px 0 85px;
+    display: inline-block;
+    font-size: 19px;
+    font-weight: bold;
+}
+.list-popular .ttl-tab{
+    text-align: center;
+    font-weight: bold;
+    font-size: 23px;
+    margin: 50px 0;
+}
+.list-popular ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.list-popular ul li {
+	padding: 0 7px;
+	margin-bottom: 40px;
+}
+.list-popular ul li a {
+	color: #333;
+}
+.list-popular ul li a .details-list {
+	height: 100%;
+    box-shadow: 0px 0px 10px 1px #f6f6f6;
+}
+.list-popular ul li a .details-list .img-thumb img {
+	margin: 0 auto;
+	width: 100%;
+	height:auto;
+	display:block;
+}
+.list-popular ul li a .details-list .img-thumb img:hover {
+	opacity: 0.8;
+}
+.list-popular ul li a .details-list .name-tour {
+	text-align: center;
+	padding: 15px;
+}
+.list-popular ul li a .details-list .name-tour h3 {
+	font-size: 18px;
+	color: #333;
+	font-weight: 700;
+}
+.list-popular ul li a .details-list .name-tour p {
+	color: #333;
+	font-size: 18px;
+	font-weight: bold;
+}
+@media (max-width: 1200px) {
+	#spotList {
+		margin-left: 0;
+	}
+}
+@media(max-width:991px) {
+	#spotList {
+		margin-left: 0;
+	}
+	.nav-item span:first-child {
+		font-size: 14px;
+	}
+}
+@media(max-width:769px) {
+	.intro-popular p {
+		text-align: justify;
+	}
+	.intro-cherry h2, .intro-popular h2 {
+		font-size: 23px;
+		margin-bottom: 30px;
+	}
+	.list-popular .ttl-tab {
+		font-size: 22px;
+		margin: 30px 0;
+	}
+	.nav-link .fas {
+		padding-right: 0;
+	}
+	.nav-tabs .nav-link {
+		line-height: 1.3;
+		border-bottom: 1px solid #ccc !important;
+		border-right: 0;
+	}
+	.nav-link.active {
+		text-decoration: none;
+	}
+	.nav-item:nth-child(3n+1), .nav-item:nth-child(3n+2), .nav-item:nth-child(3n+3) {
+		margin-right: 20px;
+		width: calc((100%/3) - 20px);
+	}
+	.nav-item span:first-child {
+		width: 100%;
+	}
+	.nav-item span:last-child {
+		width: initial;
+	}
+	.nav-item img {
+		display: none;
+	}
+	#spotList {
+		margin-left: 0;
+	}
+	.nav-item {
+		text-align: left;
+	}	
+	.intro-cherry p {
+		text-align: justify;
+	}
+	.list-popular ul li a .details-list .name-tour h3, .list-popular ul li a .details-list .name-tour p {
+		font-size: 14px;
+	}
+	.list-popular ul li {
+		margin-bottom: 30px;
+		width: 33.33333333%;
+	}
+	.tit-lv2-area {
+		font-size: 19px;
+	}
+}
+@media (max-width:600px) {
+	.nav-item:nth-child(odd) {
+		margin-right: 10px;
+		width: calc((100%/2) - 10px);
+	}
+	.nav-item:nth-child(even) {
+		margin-left: 10px;
+		width: calc((100%/2) - 10px);
+		margin-right: 0;
+	}
+	.tour-map{
+		display: none;
+	}
+	.list-popular ul li {
+		width: 50%;
+	}
+	.btn-detail a{
+		margin: 10px 0 50px;
+	}
+	.nav-item {
+		padding-bottom: 10px;
+	}
+}
+@media(max-width:500px) {
+	.intro-popular h2 {
+		font-size: 23px;
+	}
+	.intro-popular {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.intro-popular p {
+		font-size: 15px;
+		margin-top: 15px;
+		text-align: justify;
+		font-weight: 100;
+	}
+}
+@media(max-width:375px) {
+	.list-popular .ttl-tab {
+		font-size: 18px;
+	}
+	.list-popular ul li {
+		width: 100%;
+	}
+	.btn-detail a {
+		font-size: 16px;
+	}
+}
+/* ===== End PPL Spots ======== */
+
+@media (min-width:1200px) {
+	.container {
+		max-width: 1200px;
+	}
+}
+@media(max-width:991px) {
+	.container {
+		width: 100%;
+		max-width: 100%;
+	}
+	/*svg:not(:root) {
+		color: #fff;
+	}*/
+}
+@media (max-width:700px) {
+	.onlyPc {
+		display: none;
+	}
+	.onlyMb {
+		display: block;
+	}
+}
+
+/*----- Style new update 202105 -----*/
+.search-section {
+    background: url(/en/area/cherry-blossom/img/bg-pink.png);
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+.search-section > h2 {
+    font-size: 32px;
+    color: #333;
+    font-weight: 700;
+    text-align: center;
+	margin-bottom: 50px;
+}
+@media (max-width: 769px) {
+	.search-section {
+		padding-top: 30px;
+	}
+	.search-section > h2 {
+		font-size: 23px;
+		margin-bottom: 30px;
+	}
+}
+#backToTop2019{
+	z-index: 1000;
+}
+.searchbox__txt.searchbox__txt--mb {
+	background-color: #FFF;
+    padding-top: 20px;
+}

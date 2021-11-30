@@ -1,0 +1,20 @@
+[
+    {
+        "areaId": "1",
+        "areaName": "Hokkaido",
+        "detailName": "The Former Hokkaido Government Building",
+        "detailImage": "hokkaido.png"
+    },
+    {
+        "areaId": "2",
+        "areaName": "Hokkaido",
+        "detailName": "Matsumae Park",
+        "detailImage": "hokkaido.png"
+    },
+    {
+        "areaId": "3",
+        "areaName": "Aomori",
+        "detailName": "Hirosaki Park",
+        "detailImage": "aomori.png"
+    }
+]

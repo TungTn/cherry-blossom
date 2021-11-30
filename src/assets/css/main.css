@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+body {
+	line-height:1;
+	margin: 0;
+	font-family: 'Open Sans', "Segoe UI", "Helvetica Neue", sans-serif;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+	display:block;
+}
+ul,
+nav ul,
+ul li {
+	list-style:none;
+}
+blockquote, q {
+	quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content:'';
+	content:none;
+}
+a {
+	text-decoration: none;
+    color: #333;
+}
+ol,
+ul,
+dl {
+ margin: 0;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+select {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+	text-transform: none;
+}
+#header-footer-standard {
+	margin-top: 100px;
+}
+.block-mobile {
+display: none;
+}
+.logoUser {
+	z-index: 1040;
+}
+@media (max-width:767px){
+	.hidden-mobile {
+		display: none;
+	}
+	.block-mobile {
+		display: block;
+	}
+}
+
+/* icon list of add this
+These can be removed when add this code are deleted
+*/
+.topic-path .addthis_toolbox a.at300b, 
+.topic-path .addthis_toolbox a.at300m,
+.addthis_20x20_style .addthis_counter.addthis_bubble_style,
+.item-block .box-socials{
+	display:none !important;
+}
+
+/*-------------------------------------------------
+Bootstrap reset
+--------------------------------------------------*/
+
+.container {
+	width: 1140px;
+	max-width: 100%;
+}
+
+/*-------------------------------------------------
+Breadcrumbs list
+--------------------------------------------------*/
+
+ul.breadcrumbs {
+    width: 1140px;
+		max-width: 100%;
+    display: table;
+    font-size: 12px;
+    padding: 10px 15px;
+    margin: 0 auto !important;
+}
+ul.breadcrumbs::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+@media screen and (max-width:991px) {
+    ul.breadcrumbs {
+        line-height: 1.6;
+    }
+}
+ul.breadcrumbs li {
+    margin: 0 5px 0 0;
+    float: left;
+    position: relative;
+    padding-left: 10px;
+}
+ul.breadcrumbs li a {
+    color: #333399;
+}
+ul.breadcrumbs li::after{
+  content: '';
+  width: 4px;
+  height: 4px;
+  border: 0px;
+  border-top: solid 1px #333399;
+  border-right: solid 1px #333399;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+}
+ul.breadcrumbs li:first-child {
+    padding-left: 0;
+}
+ul.breadcrumbs li:first-child::after {
+    content: none;
+}
