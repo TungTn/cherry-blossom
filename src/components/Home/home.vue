@@ -337,20 +337,20 @@
                                 <ul class="nav nav-tabs">
                                     <li v-for="(item, index) in items" :class="{'active': index === 0}" class="nav-item" :key="item.keyId">
                                         <a :class="{'active': index === 0}" class="nav-link" data-toggle="tab" :href="'#' + item.keyId">
-                                            <span>{{ item.nameTab }}</span> <span><i class="fas fa-angle-down"></i></span>
+                                            <span>{{ item.tabName }}</span> <span><i class="fas fa-angle-down"></i></span>
                                         </a>
                                     </li> 
                                 </ul>
                                 <div class="tab-content">
                                     <div v-for="(item, index) in items" :class="{'active': index === 0}" class="tab-pane list-popular" :id="item.keyId" :key="item.keyId">
-                                        <h3 class="ttl-tab">{{ item.nameArea }}</h3>
+                                        <h3 class="ttl-tab">{{ item.areaName }}</h3>
                                         <ul>  
-                                            <li v-for="miniItem in item.listItem" :key="miniItem.listId" :id="miniItem.listId" class="maxheight col-md-4 col-sm-12 col-xs-12">
-                                                <router-link :to="{name: 'Detail', params: { locationId: miniItem.listId },}">
+                                            <li v-for="miniItem in item.detailItem" :key="miniItem.detailId" :id="miniItem.detailId" class="maxheight col-md-4 col-sm-12 col-xs-12">
+                                                <router-link :to="{name: 'Detail', params: key}">
                                                     <div class="details-list">
                                                         <div class="img-thumb"><img :src="require(`@/assets/img/${miniItem.listImage}`)" :alt="`${miniItem.listAlt}`" /></div>
                                                         <div class="name-tour">
-                                                            <h3>{{ miniItem.Name }}</h3>
+                                                            <h3>{{ miniItem.detailName }}</h3>
                                                         </div>
                                                     </div>
                                                 </router-link>
@@ -480,7 +480,7 @@
     },
     data() {
         return {
-            items: null,
+            items: [],
             cssBg: {
                 backgroundImage: `url(${require('@/assets/img/bg-pink.png')})`
             },

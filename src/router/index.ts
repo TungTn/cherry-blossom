@@ -1,5 +1,6 @@
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
+import Detail from "../views/Detail.vue";
 import Home from "../views/Home.vue";
 
 Vue.use(VueRouter);
@@ -11,7 +12,7 @@ const routes: Array<RouteConfig> = [
     component: Home,
   },
   {
-    path: "/detail/:locationId",
+    path: "/detail/:pId",
     name: "Detail",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route

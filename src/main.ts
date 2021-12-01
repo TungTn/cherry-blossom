@@ -12,10 +12,7 @@ require('@/assets/css/header_footer.css')
 require('@/assets/css/header_footer_reset.css')
 require('@/assets/css/list-area-style.css')
 require('@/assets/js/bootstrap.min.js')
-const base = axios.create({
-    baseURL: "../static/detail/detail.json",
-});
-Vue.prototype.$http = base;
+
 Vue.use(VueAxios, axios);
 Vue.config.productionTip = false;
 new Vue({

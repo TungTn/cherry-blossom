@@ -3,18 +3,18 @@
         "areaId": "1",
         "areaName": "Hokkaido",
         "detailName": "The Former Hokkaido Government Building",
-        "detailImage": "hokkaido.png"
+        "detailImage": "https://willerexpress.com/en/area/cherry-blossom/list-area-img/hokkaido.png"
     },
     {
         "areaId": "2",
         "areaName": "Hokkaido",
         "detailName": "Matsumae Park",
-        "detailImage": "hokkaido.png"
+        "detailImage": "https://willerexpress.com/en/area/cherry-blossom/list-area-img/hokkaido.png"
     },
     {
         "areaId": "3",
         "areaName": "Aomori",
         "detailName": "Hirosaki Park",
-        "detailImage": "aomori.png"
+        "detailImage": "https://willerexpress.com/en/area/cherry-blossom/list-area-img/aomori.png"
     }
 ]
