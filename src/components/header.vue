@@ -119,11 +119,11 @@
                             </ul>
                         </div>
                         <div class="logoPage logoPage_mb">
-                            <a href="/en/"><img src="/st/3/en/pc/img/2020/logo.png" alt="WILLER" /></a>
+                            <a href="/en/"><img src="https://creation.willerexpress.com/st/3/en/pc/img/2020/logo.png" alt="WILLER" /></a>
                         </div>
                     </nav>
                     <div class="logoPage">
-                        <a href="/en/"><img src="/st/3/en/pc/img/2020/logo.png" alt="WILLER" /></a>
+                        <a href="/en/"><img src="https://creation.willerexpress.com/st/3/en/pc/img/2020/logo.png" alt="WILLER" /></a>
                     </div>
                     <div class="logoUser">
                         <a href="https://willerexpress.com/dy/3/common/pc/mypage/menu/index">

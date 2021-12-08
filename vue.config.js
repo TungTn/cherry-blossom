@@ -1,7 +1,5 @@
-module.exports = {
-	lintOnSave: false,
-	devServer: {
-		host: 'tung-cherry.com',
-		port: '8080'
-	},
-}  
+export const lintOnSave = false;
+export const devServer = {
+  host: "tung-cherry.com",
+  port: "8080"
+};

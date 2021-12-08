@@ -7,8 +7,8 @@
         </ul>
         <!-- Start of contents -->
         <div class="banner-template">
-            <div class="banner-rep">
-                <img class="banner-relative" src="@/assets/img/bg-banner.jpg" alt="Japan Cherry Blossom spots 2021" />
+            <div class="banner-rep"> 
+                <img class="banner-relative" src="https://creation.willerexpress.com/en/area/cherry-blossom/img/bg-banner.jpg" alt="Japan Cherry Blossom spots 2021" />
                 <div class="sologan-cherry">
                     <h1>Japan Cherry Blossom spots 2021</h1>
                     <h2>Cherry Blossom Spots and Forecast</h2>
@@ -21,7 +21,7 @@
                             <div>
                                 <a href="#popular">
                                     <div class="tabs-popular tabs-popular1">
-                                        <img class="icon-camera" src="@/assets/img/icon-flower.png" alt="camera" />
+                                        <img class="icon-camera" src="https://creation.willerexpress.com/en/area/cherry-blossom/img/icon-flower.png" alt="camera" />
                                         <p>Popular Cherry Blossom Spots</p>
                                         <i class="fas fa-sort-down"></i>
                                     </div>
@@ -30,7 +30,7 @@
                             <div>
                                 <a href="#search">
                                     <div class="tabs-popular tabs-popular2">
-                                        <img class="icon-bus" src="@/assets/img/icon-bus-new.png" alt="bus" />
+                                        <img class="icon-bus" src="https://creation.willerexpress.com/en/area/cherry-blossom/img/icon-bus-new.png" alt="bus" />
                                         <p>Search the highway bus</p>
                                         <i class="fas fa-sort-down"></i>
                                     </div>
@@ -61,7 +61,7 @@
                             </div>
                             <div id="maplistContents">
                                 <div id="mapPage">
-                                    <img src="@/assets/img/map.png" alt="map" usemap="#image-map" class="tour-map" />
+                                    <img src="https://creation.willerexpress.com/en/area/cherry-blossom/img/map.png" alt="map" usemap="#image-map" class="tour-map" />
                                     <a href="/en/area/cherry-blossom/list-area.php?a=hokkaido" class="underline">
                                         <p class="abs-position spot-hokkaido">
                                             <span class="spot-name">Hokkaido (Sapporo)</span><br />
@@ -341,14 +341,18 @@
                                         </a>
                                     </li> 
                                 </ul>
-                                <div class="tab-content">
+                                <div class="tab-content">                                    
                                     <div v-for="(item, index) in items" :class="{'active': index === 0}" class="tab-pane list-popular" :id="item.keyId" :key="item.keyId">
                                         <h3 class="ttl-tab">{{ item.areaName }}</h3>
                                         <ul>  
-                                            <li v-for="miniItem in item.detailItem" :key="miniItem.detailId" :id="miniItem.detailId" class="maxheight col-md-4 col-sm-12 col-xs-12">
-                                                <router-link :to="{name: 'Detail', params: key}">
+                                            <li 
+                                              v-for="miniItem in item.detailItem" 
+                                              :key="miniItem.detailId" 
+                                              :id="miniItem.detailId"                                               
+                                              class="maxheight col-md-4 col-sm-12 col-xs-12">
+                                                <router-link :to="{name: 'Detail', params: { productsId: miniItem.detailId },}">
                                                     <div class="details-list">
-                                                        <div class="img-thumb"><img :src="require(`@/assets/img/${miniItem.listImage}`)" :alt="`${miniItem.listAlt}`" /></div>
+                                                        <div class="img-thumb"><img :src="miniItem.listImage" :alt="miniItem.listAlt" /></div>
                                                         <div class="name-tour">
                                                             <h3>{{ miniItem.detailName }}</h3>
                                                         </div>
@@ -471,7 +475,6 @@
 <script>
   import cheader from '@/components/header.vue';  
   import cfooter from '@/components/footer.vue';
-  import axios from "axios";  
   export default {
     name: 'home',
     components: {    
@@ -505,19 +508,24 @@
             });
         }); 
     },
-    methods: {        
-        async getItem() {
-            try {
-                let response = await this.$http.get (
-                    `../static/home/home.json`
-                )
-                this.items = response.data            
-                console.log(typeof this.items)
-            } catch (error) {
-                console.log(error)
-            }
-        }
-    }        
+    methods: {
+    async getItem() {
+      try {
+        let response = await this.$http.get(
+          `../static/home/home.json`,
+          {
+            headers: {
+              'Content-Type': 'application/json'
+            },
+          },
+        )
+        console.log(response.data)
+        this.items = response.data
+      } catch (error) {
+        console.log(error.response)
+      }
+    },
+  },        
 
 }
 </script>
